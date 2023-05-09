@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <section class="live-streamings py-5">
+    <section class="live-streamings pt-5 text-white">
         <div class="mc-container">
             <div class="titles text-center pt-5">
                 <h5>titolo</h5>
@@ -16,13 +16,25 @@ export default {
                     
                     <div class="col-6 p-2">
                         <div class="video border">
-                            <span>a</span>    
+                            <div class="play d-flex justify-content-end flex-column align-items-center h-50">
+                                <span>Play</span>
+                            </div>
+                            <div class="video-content text-start p-5">
+                                <button class="btn btn-primary">bottone</button>
+                                <h2 class="pt-2">TITOLO VIDEO</h2>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="col-6 p-2">
                         <div class="video border">
-                            <span>a</span>
+                            <div class="play d-flex justify-content-end flex-column align-items-center h-50">
+                                <span>Play</span>
+                            </div>
+                            <div class="video-content text-start p-5">
+                                <button class="btn btn-primary">bottone</button>
+                                <h2 class="pt-2">TITOLO VIDEO</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -32,19 +44,37 @@ export default {
 
                     <div class="col-4 p-2">
                         <div class="video border">
-                            <span>a</span>
+                            <div class="play d-flex justify-content-end flex-column align-items-center h-50">
+                                <span>Play</span>
+                            </div>
+                            <div class="video-content text-start p-5">
+                                <button class="btn btn-primary">bottone</button>
+                                <h2 class="pt-2">TITOLO VIDEO</h2>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-4 p-2">
                         <div class="video border">
-                            <span>a</span>
+                            <div class="play d-flex justify-content-end flex-column align-items-center h-50">
+                                <span>Play</span>
+                            </div>
+                            <div class="video-content text-start p-5">
+                                <button class="btn btn-primary">bottone</button>
+                                <h2 class="pt-2">TITOLO VIDEO</h2>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-4 p-2">
                         <div class="video border">
-                            <span>a</span>
+                            <div class="play d-flex justify-content-end flex-column align-items-center h-50">
+                                <span>Play</span>
+                            </div>
+                            <div class="video-content text-start p-5">
+                                <button class="btn btn-primary">bottone</button>
+                                <h2 class="pt-2">TITOLO VIDEO</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -58,6 +88,7 @@ export default {
         background-image: url('../../../public/img/bg\ \(3\).jpg');
         background-size: cover;
         background-attachment: fixed;
+        padding-bottom: 120px;
 
         .col-6,
         .col-4{
@@ -66,6 +97,8 @@ export default {
 
         .video{
             height: 100%;
+
+            
         }
     }
 </style>
