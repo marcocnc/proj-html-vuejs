@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <section class="live-streamings pt-5 text-white">
+    <section class="live-streamings pt-5">
         <div class="mc-container">
             <div class="titles text-center pt-5">
                 <h5>titolo</h5>

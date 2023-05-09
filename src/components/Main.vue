@@ -5,6 +5,7 @@ import GameCollection from './partials/GameCollection.vue';
 import Schedule from './partials/Schedule.vue';
 import Squads from './partials/Squads.vue';
 import LiveStreamings from './partials/LiveStreamings.vue';
+import Products from './partials/Products.vue';
 
 export default {
     name:'Main',
@@ -13,7 +14,8 @@ export default {
         GameCollection,
         Schedule,
         Squads,
-        LiveStreamings
+        LiveStreamings,
+        Products
     }
 }
 </script>
@@ -30,6 +32,8 @@ export default {
         <Squads />
 
         <LiveStreamings/>
+
+        <Products/>
     </main>
 </template>
 

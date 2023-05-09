@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <section class="schedule text-white pt-5">
+    <section class="schedule pt-5">
         <div class="mc-container d-flex flex-column justify-content-center align-items-center">
             <h5>titolo</h5>
             <h3>Titolo</h3>

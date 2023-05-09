@@ -52,8 +52,8 @@ export default {
 
             <!-- Buttons -->
             <div class="buttons">
-                <div class="btn btn-primary text-white me-3">bottone</div>
-                <div class="btn btn-primary text-white">bottone</div>
+                <div class="btn btn-primary me-3">bottone</div>
+                <div class="btn btn-primary ">bottone</div>
             </div>
         </div>  
     </div>
@@ -65,7 +65,6 @@ export default {
 
     header{
         background: $header_bgc;
-        color:white;
     }
 
     .phone-number,
