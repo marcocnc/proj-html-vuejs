@@ -4,7 +4,7 @@ import Jumbotron from './partials/Jumbotron.vue';
 import GameCollection from './partials/GameCollection.vue';
 import Schedule from './partials/Schedule.vue';
 import Squads from './partials/Squads.vue';
-
+import LiveStreamings from './partials/LiveStreamings.vue';
 
 export default {
     name:'Main',
@@ -12,7 +12,8 @@ export default {
         Jumbotron,
         GameCollection,
         Schedule,
-        Squads
+        Squads,
+        LiveStreamings
     }
 }
 </script>
@@ -28,6 +29,7 @@ export default {
 
         <Squads />
 
+        <LiveStreamings/>
     </main>
 </template>
 
