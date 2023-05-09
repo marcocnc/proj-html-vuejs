@@ -8,7 +8,7 @@ export default {
 <template>
   <header>
 
-    <div class="container">
+    <div class="mc-container">
         <!-- Info -->
         <div class="header-info d-flex justify-content-between">
 

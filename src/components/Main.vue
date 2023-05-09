@@ -1,16 +1,24 @@
 
 <script>
+import Jumbotron from './partials/Jumbotron.vue';
+import GameCollection from './partials/GameCollection.vue';
 export default {
-    name:'Main'
+    name:'Main',
+    components:{
+        Jumbotron,
+        GameCollection
+    }
 }
 </script>
 
 <template>
     <main>
-        <h1>Main</h1>
+        <Jumbotron />
+
+        <GameCollection/>
     </main>
 </template>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+    
 </style>
