@@ -14,6 +14,7 @@ export default {
                 <h5>titolo</h5>
                 <h3>Titolo</h3>
 
+                <!-- Cards -->
                 <div class="mc-cards-container w-100 d-flex mt-4">
                     <div class="mc-card">Card</div>
                     <div class="mc-card">Card</div>
@@ -27,7 +28,7 @@ export default {
 
             <!-- Who we are -->
             <div class="bottom d-flex justify-content-between pb-5">
-                <div class="who-image w-50 pb-4">
+                <div class="who-image w-50">
                     <img src="../../../public/img/01.png" alt="01">
                 </div>
                 <div class="who-text w-50 ps-3">
@@ -43,10 +44,10 @@ export default {
 <style lang="scss" scoped>
 @use '../../scss/partials/vars' as *;
     .game-collections{
-        background-color: $color_blue;
+        background-color: darken($color_blue, $amount: 10%);
         .top{
             .mc-card{
-            border: 1px solid black;
+            border: 1px solid white;
             width: calc(100% / 3);
             margin-right: 10px;
 
