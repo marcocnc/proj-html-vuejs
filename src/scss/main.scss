@@ -1,5 +1,9 @@
 @use './partials/vars' as *;
 @import 'bootstrap/scss/bootstrap';
+@import 'swiper/css';
+
+@import 'swiper/css/pagination';
+@import 'swiper/css/navigation';
 
 *{
     margin: 0;
