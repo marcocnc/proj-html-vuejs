@@ -17,67 +17,127 @@ export default {
   
     <section id="jumbotron">
 
-        <swiper class="mySwiper">
+        <swiper class="mySwiper"
+        :loop="true"
+        >
+            <!-- First slide -->
+            <swiper-slide class="first-slide">
+              <div class="mc-container h-100 text-white d-flex align-items-center">
+                <div class="text text-start">
+                  <h1>ONLINE GAME</h1>
+                  <h2>GENUINE MONEY TRANSACTION</h2>
 
-            <swiper-slide class="first-slide">Slide 1</swiper-slide>
-            <swiper-slide class="second-slide">Slide 2</swiper-slide>
+                  <p class="w-50 text-start">Assertively communicate an expanded array of mindshare rather than diverse technologies for magnetic applications eamlessly virtual then Conveniently monetize synergistic human capital</p>
 
-        </swiper>
-        <!-- <div class="mc-container h-100 text-white d-flex justify-content-start align-items-center">
-            <div class="text">
-                <h1>TITOLO</h1>
-                <h2>TITOLO</h2>
-                <p>Desc</p>
-                <button class="btn btn-primary text-white">button</button>
-            </div>
-        </div> -->
+                  <button class="jumbo-btn text-white">
+                    <span>JOIN US TODAY</span>
+                    <i class="fa-solid fa-circle-play ps-2"></i>
+                  </button>
+                </div>
+              </div>
+            </swiper-slide>
+            
+            
+            <!-- Second slide -->
+            <swiper-slide class="second-slide">
+              <div class="mc-container h-100 text-white d-flex align-items-center">
+                <div class="text text-start">
+                  <h1>ONLINE GAME</h1>
+                  <h2>GENUINE MONEY TRANSACTION</h2>
+
+                  <p class="w-50 text-start">Assertively communicate an expanded array of mindshare rather than diverse technologies for magnetic applications eamlessly virtual then Conveniently monetize synergistic human capital</p>
+
+                  <button class="jumbo-btn text-white">
+                    <span>JOIN US TODAY</span>
+                    <i class="fa-solid fa-circle-play ps-2"></i>
+                  </button>
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper>
     </section>
 </template>
 
 <style lang="scss" scoped>
-    // #jumbotron{
-    //     height: 700px;
-    //     background: #000000a1;
-    //     background-image: url(../../../public/img/bg.jpg);
-    //     background-position: center;
-
-    //     h1{
-    //         font-size: 100px;
-    //     }
-    // }
+@use '../../scss/partials/vars' as *;
+    #jumbotron{
     .swiper {
-  width: 100%;
-  height: 100%;
-}
+        width: 100%;
+        height: 100%;
+      }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+      .first-slide,
+      .second-slide{
+          height: 700px;
+          .text{
+            h1{
+              font-size: 90px;
+              font-weight: 700;
+              text-shadow: 2px 2px darken($color_red, $amount: 10%);
+            }
 
-.first-slide,
-.second-slide{
-    height: 700px;
-}
+            h2{
+              font-size: 40px;
+              font-weight: 700;
+            }
 
-.first-slide{
-    background-image: url('../../../public/img/bg.jpg');
-}
+            p{
+              line-height: 30px;
+              font-size: 15px;
+            }
+          }
 
-.second-slide{
-    background-image: url('../../../public/img/bg-2.jpg');
-}
+          .jumbo-btn{
+            padding: 15px 25px;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 4px 4px #D0D4D8;
+            background-color: $color_white;
+
+            &:hover{
+              background-color: $color_red;
+              box-shadow: -4px -4px $color_white;
+              transition: all .3s;
+            }
+
+            &:hover span, &:hover i{
+              color: $color_white;
+            }
+
+            span, i{
+              color: $color_red;
+            }
+          }
+      }
+
+      .first-slide{
+          background-image: url('../../../public/img/bg.jpg');
+          background-position: center;
+
+          
+      }
+
+      .second-slide{
+          background-image: url('../../../public/img/bg-2.jpg');
+          background-position: center;
+      }
+    }
 </style>
