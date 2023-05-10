@@ -10,7 +10,7 @@ export default {
             <div class="titles text-center pt-5">
                 <h5>titolo</h5>
                 <h3 class="pb-3">Titolo</h3>
-
+            </div> 
                 <!-- Row with 4 col -->
                 <div class="row">
                     <div class="col-3">
@@ -81,7 +81,7 @@ export default {
                         </div>
                     </div>
                 </div>
-            </div>   
+              
 
             <div class="line w-100"></div>
 

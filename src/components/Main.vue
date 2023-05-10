@@ -6,6 +6,7 @@ import Schedule from './partials/Schedule.vue';
 import Squads from './partials/Squads.vue';
 import LiveStreamings from './partials/LiveStreamings.vue';
 import Products from './partials/Products.vue';
+import RecentNews from './partials/RecentNews.vue';
 
 export default {
     name:'Main',
@@ -15,7 +16,8 @@ export default {
         Schedule,
         Squads,
         LiveStreamings,
-        Products
+        Products,
+        RecentNews
     }
 }
 </script>
@@ -34,6 +36,8 @@ export default {
         <LiveStreamings/>
 
         <Products/>
+
+        <RecentNews />
     </main>
 </template>
 
