@@ -1,7 +1,14 @@
 
 <script>
+import { headerLinks } from '../data/database'; 
+
 export default {
-    name:'Header'
+    name:'Header',
+    data(){
+        return{
+            headerLinks
+        }
+    }
 }
 </script>
 
@@ -14,12 +21,12 @@ export default {
 
             <!-- Phone Number -->
             <div class="phone-number w-25 p-3 text-center">
-                <i class="fa-solid fa-phone pe-2"></i>
+                <i class="fa-solid fa-phone"></i>
                 <span>+800-123-4567 6587</span>
             </div>
 
             <!-- Address -->
-            <div class="address w-50 p-3">
+            <div class="address w-50 p-3 ps-5">
                 <i class="fa-solid fa-location-dot pe-2"></i>
                 <span>Beverley, New York 224 USA</span>
             </div>
@@ -50,26 +57,32 @@ export default {
 
         <!-- Main Menù -->
 
-        <div class="header-mainmenu d-flex justify-content-between pt-5">
+        <div class="header-mainmenu d-flex justify-content-between align-items-center pt-2">
 
             <!-- Logo -->
             <div class="logo">
-                <span>IMMAGINE</span>
+                <img src="../../public/img/logo.png" alt="logo">
             </div>
 
             <!-- Navbar -->
             <nav>
-                <span class="px-2">link</span>
-                <span class="px-2">link</span>
-                <span class="px-2">link</span>
-                <span class="px-2">link</span>
-                <span class="px-2">link</span>
+                <ul class="d-flex align-items-center fw-bold">
+                    <li v-for="(link, index) in headerLinks" :key="index">
+                        <a href="#" class="pe-4 text-white">{{ link.text }}</a>
+                    </li>
+                </ul>
             </nav>
 
             <!-- Buttons -->
-            <div class="buttons">
-                <div class="btn btn-primary me-3">bottone</div>
-                <div class="btn btn-primary ">bottone</div>
+            <div class="buttons d-flex">
+                <div class="header-btn">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="ps-2">LOG IN</span>
+                </div>
+                <div class="header-btn-reverse">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="ps-2">SIGN UP</span>
+                </div>
             </div>
         </div>  
     </div>
@@ -122,6 +135,30 @@ export default {
 
             &:last-child{
                 border: none;
+            }
+        }
+
+        .header-mainmenu{
+            ul{
+                margin-bottom:0;
+            }
+
+            .header-btn,
+            .header-btn-reverse{
+                padding: 15px 10px;
+                font-size: 15px;
+            }
+
+            .header-btn{
+                background-color: $color_white;
+                color: $color_red;
+                box-shadow: 0 3px 0 0 $color_red;
+            }
+
+            .header-btn-reverse{
+                background-color: $color_red;
+                color: $color_white;
+                box-shadow: 3px 3px 0 0 $color_white;
             }
         }
     }
