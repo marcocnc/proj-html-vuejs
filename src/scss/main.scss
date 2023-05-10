@@ -38,3 +38,31 @@ img{
     vertical-align: middle;
 }
 
+h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h5{
+    color: $color_red;
+}
+
+.team-image{
+    height: 120px;
+}
+
+.vs-image{
+    width: 40px;
+    height: 40px;
+}
+
+.mc-buttons{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: $color_white;
+    color: $color_red;
+    cursor: pointer;
+}

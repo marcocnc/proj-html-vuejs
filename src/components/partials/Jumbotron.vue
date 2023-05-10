@@ -29,7 +29,7 @@ export default {
 
                   <p class="w-50 text-start">Assertively communicate an expanded array of mindshare rather than diverse technologies for magnetic applications eamlessly virtual then Conveniently monetize synergistic human capital</p>
 
-                  <button class="jumbo-btn text-white">
+                  <button class="mc-buttons jumbo-btn text-white">
                     <span>JOIN US TODAY</span>
                     <i class="fa-solid fa-circle-play ps-2"></i>
                   </button>
@@ -92,11 +92,6 @@ export default {
               text-shadow: 2px 2px darken($color_red, $amount: 10%);
             }
 
-            h2{
-              font-size: 40px;
-              font-weight: 700;
-            }
-
             p{
               line-height: 30px;
               font-size: 15px;
@@ -104,11 +99,6 @@ export default {
           }
 
           .jumbo-btn{
-            padding: 15px 25px;
-            border: none;
-            border-radius: 6px;
-            font-size: 20px;
-            font-weight: bold;
             box-shadow: 4px 4px #D0D4D8;
             background-color: $color_white;
 
