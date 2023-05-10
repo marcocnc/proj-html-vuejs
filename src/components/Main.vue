@@ -7,6 +7,7 @@ import Squads from './partials/Squads.vue';
 import LiveStreamings from './partials/LiveStreamings.vue';
 import Products from './partials/Products.vue';
 import RecentNews from './partials/RecentNews.vue';
+import Testimonial from './partials/Testimonial.vue';
 
 export default {
     name:'Main',
@@ -17,7 +18,8 @@ export default {
         Squads,
         LiveStreamings,
         Products,
-        RecentNews
+        RecentNews,
+        Testimonial
     }
 }
 </script>
@@ -38,6 +40,8 @@ export default {
         <Products/>
 
         <RecentNews />
+
+        <Testimonial />
     </main>
 </template>
 

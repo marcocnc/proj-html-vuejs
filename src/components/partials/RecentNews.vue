@@ -10,7 +10,7 @@ export default {
         <div class="titles text-center pt-5">
             <h5>titolo</h5>
             <h3 class="pb-3">Titolo</h3>
-
+        </div> 
             <div class="mc-container">
                 <div class="row">
 
@@ -55,7 +55,6 @@ export default {
                     </div>
                 </div>
             </div>
-        </div> 
     </section>
 </template>
 
