@@ -46,7 +46,46 @@ export default {
                     <img src="../../../public/img/01.png" alt="01">
                 </div>
                 <div class="who-text w-50 ps-3">
-                    testo
+                    <div class="titles pt-5">
+                        <h5>WHO WE ARE</h5>
+                        <h2 class="pb-3 w-75">WE ARE PROFESSIONAL TEAM ESPORT</h2>
+                        <p class="w-75">
+                            Distinctively provide acces mutfuncto users whereas transparent proceses somes ncentivize eficient functionalities rather than an extensible archtectur services and cross
+                        </p>
+
+                        <!-- Info div -->
+                        <div class="infos">
+                            <div class="info d-flex">
+                                <div class="info-image me-3">
+                                    <img class="p-3" src="../../../public/img/icon-1.png" alt="icon-1">
+                                </div>
+                                <div class="info-text">
+                                    <h5 class="text-white">103K COMMUNITY EARNING</h5>
+                                    <p>Distinctively provide acces mutfuncto users whereas communicate leveraged services</p>
+                                </div>
+                            </div>
+
+                            <div class="info d-flex">
+                                <div class="info-image me-3">
+                                    <img class="p-3" src="../../../public/img/icon-2.png" alt="icon-1">
+                                </div>
+                                <div class="info-text">
+                                    <h5 class="text-white">34M+ REGISTERED PLAYERS</h5>
+                                    <p>Distinctively provide acces mutfuncto users whereas communicate leveraged services</p>
+                                </div>
+                            </div>
+
+                            <div class="info d-flex">
+                                <div class="info-image me-3">
+                                    <img class="p-3" src="../../../public/img/icon-3.png" alt="icon-1">
+                                </div>
+                                <div class="info-text">
+                                    <h5 class="text-white">240K STREAMS COMPLETE</h5>
+                                    <p>Distinctively provide acces mutfuncto users whereas communicate leveraged services</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
             </div>
         </div>
@@ -73,7 +112,7 @@ export default {
             }
         }
         .line{
-            border-bottom: 1px solid white;
+            border-bottom: 1px solid #21274B;
             margin: 100px 0;
         }
 
@@ -105,8 +144,21 @@ export default {
                 }
             }
 
-            .who-text{
-                background-color: #a24d4db6;
+            .infos{
+                .info{
+                    .info-image{
+                        img{
+                            border-radius: 50%;
+                            background-color: $color_red;
+                        }
+                    }
+
+                    .info-text{
+                        h5{
+                            font-weight: 700;
+                        }
+                    }
+                }
             }
         }
     }
