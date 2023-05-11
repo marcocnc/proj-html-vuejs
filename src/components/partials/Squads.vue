@@ -118,10 +118,10 @@ export default {
         <div class="mc-container ">
             <div class="community d-flex w-100">
                 <div class="community-txt p-5 w-50">
-                    <span>titolo</span>
-                    <h3>Titolo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde iure, nesciunt blanditiis distinctio recusandae aliquid quo mollitia in perspiciatis tempora dolor cumque nulla? Quaerat, quae ullam! Voluptatem vel veritatis perferendis!</p>
-                    <button class="btn btn-primary">bottone</button>
+                    <h5>LET'S PLAY TOGETHER</h5>
+                    <h3>JOIN GAMER ESPORTS TO BECOME NEXT PRO GAMER TODAY!</h3>
+                    <p class="py-4">Distinctively provide acces mutfuncto users whereas transparent proceses somes ncentivize eficient functionalities rather than an extensible archtectur services and cross</p>
+                    <button class="mc-buttons">JOIN COMMUNITY <i class="fa-solid fa-chevron-right fs-6"></i></button>
                 </div>
                 <div class="community-image w-50">
                     <img src="../../../public/img/01 (1).png" alt="01">

@@ -24,7 +24,6 @@ h1,
 h2,
 h3,
 h4,
-h5,
 h6{
     font-weight: 700;
 }
@@ -77,7 +76,7 @@ h5{
 .mc-buttons{
     background-color: $color_white;
     color: $color_red;
-    box-shadow: 4px 4px #D0D4D8;
+    box-shadow: 4px 4px $color_red;
 
     &:hover{
         background-color: $color_red;
@@ -90,7 +89,7 @@ h5{
 .mc-buttons-reverse{
     background-color: $color_red;
     color: $color_white;
-    box-shadow: 4px 4px #555;
+    box-shadow: 3px 3px #555;
 
     &:hover{
         background-color: $color_white;
