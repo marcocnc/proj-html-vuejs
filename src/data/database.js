@@ -136,5 +136,35 @@ const products = [
     },
 ]
 
-export {headerLinks, upcomingMatch, previousMatch, squadPlayers ,videoStreamsFirstRow, videoStreamsSecondRow, products}
+const partnersList1 = [
+    {
+        img: '05'
+    },
+    {
+        img: '06'
+    },
+    {
+        img: '07'
+    },
+    {
+        img: '08'
+    },
+    {
+        img: '07'
+    },
+]
+
+const partnersList2 = [
+    {
+        img: '05'
+    },
+    {
+        img: '06'
+    },
+    {
+        img: '07'
+    }
+]
+
+export {headerLinks, upcomingMatch, previousMatch, squadPlayers ,videoStreamsFirstRow, videoStreamsSecondRow, products, partnersList1,partnersList2}
 

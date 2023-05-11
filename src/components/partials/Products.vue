@@ -1,10 +1,12 @@
 <script>
-import { products } from '../../data/database'
+import { products, partnersList1, partnersList2 } from '../../data/database'
 export default {
     name: 'Products',
     data(){
         return{
-            products
+            products,
+            partnersList1,
+            partnersList2
         }
     },
     methods:{
@@ -52,10 +54,28 @@ export default {
             <div class="line w-100"></div>
 
             <div class="titles text-center pt-5">
-                <h5>titolo</h5>
-                <h3 class="pb-3">Titolo</h3>
+                <h5>WE OUR PARTNERS</h5>
+                <h2 class="pb-3">BECOME A PARTNER OF GAMER</h2>
 
-                <button class="btn btn-primary mt-5">Bottone</button>
+                <div class="row pt-3">
+                    <div class="first-col d-flex justify-content-center">
+                        <div class="partner" 
+                        v-for="(partner, index) in partnersList1"
+                        :key="index"
+                        >
+                            <img class="me-5" :src="getImage(`../../../public/img/${partner.img}.png`)">
+                        </div>
+                    </div>
+
+                    <div class="second-col d-flex justify-content-center pt-5">
+                        <div class="partner"
+                        v-for="(partner, index) in partnersList2"
+                        :key="index">
+                        <img class="me-5" :src="getImage(`../../../public/img/${partner.img}.png`)">
+                        </div>
+                    </div>
+                </div>
+                <button class="mc-buttons my-5">BECOME A PARTNER <i class="fa-solid fa-chevron-right fs-6"></i></button>
             </div>
         </div>
     </section>                
