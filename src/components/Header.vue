@@ -95,6 +95,9 @@ export default {
     header{
         background: $header_bgc;
         font-family: 'Barlow', sans-serif;
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
     
         .phone-number,
         .header-icons{
@@ -139,6 +142,7 @@ export default {
         }
 
         .header-mainmenu{
+            background-color: $header_bgc;
             ul{
                 margin-bottom:0;
             }

@@ -61,6 +61,7 @@ export default {
 <style lang="scss" scoped>
 @use '../../scss/partials/vars' as *;
     #jumbotron{
+      padding-top: 160px;
     .swiper {
         width: 100%;
         height: 100%;
