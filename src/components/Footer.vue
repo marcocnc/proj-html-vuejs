@@ -1,7 +1,19 @@
 
 <script>
+import { footerTopInfo, topJackpotGames } from '../data/database';
 export default {
-    name:'Footer'
+    name:'Footer',
+    data(){
+        return{
+            footerTopInfo,
+            topJackpotGames
+        }
+    },
+    methods:{
+        getImage(img){
+            return new URL(img, import.meta.url).href;
+        }
+    }
 }
 </script>
 
@@ -14,11 +26,17 @@ export default {
                 <!-- Row with phone, mail and address -->
                 <div class="row">
 
-                    <div class="col-4 p-4 phone">phone</div>
-
-                    <div class="col-4 p-4 mail">mail</div>
-
-                    <div class="col-4 p-4 address">address</div>
+                    <div class="col-4 p-4 infos d-flex align-items-center" 
+                    v-for="(info, index) in footerTopInfo"
+                    :key="index"
+                    >
+                        <div class="image me-3">
+                            <img :src="getImage(`../../public/img/${info.img} (4).png`)">
+                        </div>
+                        <div class="text">
+                            <span>{{ info.text }}</span>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -31,70 +49,34 @@ export default {
 
                     <!-- Logo and Brands div -->
                     <div class="col-4 logo-brands">
-                        <div class="logo">LOGO</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem maiores minus tempora architecto, magni facere mollitia corporis pariatur eaque, aperiam vero illum aut adipisci aliquam dolor excepturi neque modi provident?</p>
+                        <div class="logo">
+                            <img src="../../public/img/logo.png" alt="logo">
+                        </div>
+                        <p class="pt-3">Upropriate brand economca sound technolog after covalent technology enable prospective wastng markets whereas propriate and brand economca sound technolog</p>
                         <div class="brands d-flex">
-                            <span>ICONA</span>
-                            <span>ICONA</span>
-                            <span>ICONA</span>
+                            <img class="me-2" src="../../public/img/social-1.png">
+                            <img class="me-2" src="../../public/img/social-2.png">
+                            <img src="../../public/img/social-3.png">
                         </div>
                     </div>
 
                     <!-- Teams div -->
                     <div class="col-4 jackpot">
-                        <h3>Titolo</h3>
-                        <div class="teams">
+                        <h4>TOP JACKPOT GAMES</h4>
+                        <div class="teams pt-3">
 
-                            <!-- First team -->
-                            <div class="team d-flex">
+                            <!-- Teams -->
+                            <div class="team d-flex pt-2" 
+                            v-for="(team, index) in topJackpotGames"
+                            :key="index">
                                 <div class="team-img">
-                                    <img src="../../public/img/01 (4).jpg" alt="">
+                                    <img :src="getImage(`../../public/img/${team.img} (5).jpg`)">
                                 </div>
                                 <div class="team-content ps-3">
-                                    <h4>FREE POKER GAME</h4>
-                                    <span>Poker: $230</span>
+                                    <h6>{{team.title}} POKER GAME</h6>
+                                    <span class="poker">Poker: <span class="dollars"> {{team.poker}}</span> </span>
                                     <div class="stars">
-                                        <span>icona</span>
-                                        <span>icona</span>
-                                        <span>icona</span>
-                                        <span>icona</span>
-                                        <span>icona</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Second team -->
-                            <div class="team d-flex mt-3">
-                                <div class="team-img">
-                                    <img src="../../public/img/01 (4).jpg" alt="">
-                                </div>
-                                <div class="team-content ps-3">
-                                    <h4>FREE POKER GAME</h4>
-                                    <span>Poker: $230</span>
-                                    <div class="stars">
-                                        <span>icona</span>
-                                        <span>icona</span>
-                                        <span>icona</span>
-                                        <span>icona</span>
-                                        <span>icona</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Third team -->
-                            <div class="team d-flex mt-3">
-                                <div class="team-img">
-                                    <img src="../../public/img/01 (4).jpg" alt="">
-                                </div>
-                                <div class="team-content ps-3">
-                                    <h4>FREE POKER GAME</h4>
-                                    <span>Poker: $230</span>
-                                    <div class="stars">
-                                        <span>icona</span>
-                                        <span>icona</span>
-                                        <span>icona</span>
-                                        <span>icona</span>
-                                        <span>icona</span>
+                                        <i class="fa-solid fa-star me-1 pt-2" v-for="star in 5" :key="star"></i>
                                     </div>
                                 </div>
                             </div>
@@ -103,13 +85,13 @@ export default {
 
                     <!-- Newsletter -->
                     <div class="col-4 newsletter">
-                        <h3>Titolo</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <h4>OUR NEWSLETTER</h4>
+                        <p class="pt-3">Gamer esports organization supported by community leaders</p>
 
-                        <input type="text" placeholder="Your name" class="p-2 w-100">
-                        <input type="text" placeholder="Your email" class=" mt-4 p-2 w-100">
+                        <input type="text" placeholder="Your name" class="p-3 w-100">
+                        <input type="text" placeholder="Your email" class=" mt-4 p-3 w-100">
 
-                        <button class="btn btn-primary mt-4">Bottone</button>
+                        <button class="mc-buttons my-5">SEND MESSAGE <i class="fa-solid fa-circle-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -130,20 +112,49 @@ export default {
         background-size: cover;
         padding-bottom: 150px;
         .footer-top{
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid #1E1E3E;
             margin-bottom: 80px;
 
-            .phone,
-            .mail,
-            .address{
-                border-left: 1px solid #fff;
-            }
+            .infos{
+                border-left: 1px solid #1E1E3E;
 
-            .address{
-                border-right: 1px solid #fff;
+                &:last-child{
+                    border-right: 1px solid #1E1E3E;
+                }
             }
         }
         
+    }
+
+    .footer-center{
+
+        .team-img{
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .poker, .dollars{
+            font-size: 13px;
+        }
+        .dollars{
+            font-weight: 700;
+        }
+
+        .stars{
+            font-size: 14px;
+            color: $color_red;
+        }
+
+        input{
+            background-color: $color_darkblue;
+            border: none;
+            color: $color_white;
+
+            &:focus{
+                outline: none;
+            }
+        }
     }
     .footer-bottom{
         height: 90px;

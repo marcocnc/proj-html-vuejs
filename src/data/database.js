@@ -166,5 +166,43 @@ const partnersList2 = [
     }
 ]
 
-export {headerLinks, upcomingMatch, previousMatch, squadPlayers ,videoStreamsFirstRow, videoStreamsSecondRow, products, partnersList1,partnersList2}
+const footerTopInfo = [
+    {
+        img: '01',
+        text: 'Phone Number : +88012 345 678 912'
+    },
+
+    {
+        img: '02',
+        text: 'Email : marcocancelliere54@gmail.com'
+    },
+
+    {
+        img: '03',
+        text: 'Address : 30 North West New York 240'
+    },
+]
+
+
+const topJackpotGames= [
+    {
+        img: '01',
+        title: 'FREE',
+        poker: '$230'
+    },
+
+    {
+        img: '02',
+        title: 'CLUB',
+        poker: '$290'
+    },
+
+    {
+        img: '03',
+        title: 'ROYAL',
+        poker: '$330'
+    },
+]
+
+export {headerLinks, upcomingMatch, previousMatch, squadPlayers ,videoStreamsFirstRow, videoStreamsSecondRow, products, partnersList1,partnersList2, footerTopInfo, topJackpotGames}
 
