@@ -96,6 +96,16 @@ export default {
                 transition: all .5s;
             }
         }
+
+        .product-image{
+            overflow: hidden;
+            img{
+                &:hover{
+                    transform:rotate(15deg) scale(1.2);
+                    transition: all .3s;
+                }
+            }
+        }
         .line{
             border-bottom: 1px solid white;
             margin: 150px 0;

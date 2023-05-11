@@ -129,9 +129,14 @@ export default {
     .footer-center{
 
         .team-img{
+            overflow: hidden;
             img{
                 width: 80px;
                 height: 80px;
+                &:hover{
+                    transform:rotate(-5deg) scale(1.1);
+                    transition: all .3s;
+                }
             }
         }
         .poker, .dollars{

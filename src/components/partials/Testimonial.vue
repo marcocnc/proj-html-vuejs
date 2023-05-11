@@ -57,7 +57,7 @@ export default {
 
                         <!-- PARTNER IMAGE -->
                         <div class="user-partner">
-                            <img src="../../../public/img/01 (3).png">
+                            <img class="animated" src="../../../public/img/01 (3).png">
                         </div>
                     </div>
 
@@ -93,7 +93,7 @@ export default {
                         </div>
                         <!-- PARTNER IMAGE -->
                         <div class="user-partner">
-                            <img src="../../../public/img/01 (3).png">
+                            <img class="animated" src="../../../public/img/01 (3).png">
                         </div>
                     </div>
 
@@ -131,7 +131,7 @@ export default {
 
                         <!-- PARTNER IMAGE -->
                         <div class="user-partner">
-                            <img src="../../../public/img/01 (3).png">
+                            <img class="animated" src="../../../public/img/01 (3).png">
                         </div>
                     </div>
 
@@ -168,7 +168,7 @@ export default {
                         </div>
                         <!-- PARTNER IMAGE -->
                         <div class="user-partner">
-                            <img src="../../../public/img/01 (3).png">
+                            <img class="animated" src="../../../public/img/01 (3).png">
                         </div>
                     </div>
 

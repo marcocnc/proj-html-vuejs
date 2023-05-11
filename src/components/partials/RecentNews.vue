@@ -73,10 +73,32 @@ export default {
             background-color: $color_darkblue;
             .news-image{
                 border: 10px solid $color_darkblue;
+                overflow: hidden;
                 img{
                     width: 100%;
                     object-fit: cover;
+                    
                 }
+            }
+
+            &:hover img{
+                transform: scale(1.3);
+                transition: all .6s;
+            }
+
+            &:hover h4{
+                color: $color_red;
+                transition: all .2s;
+            }
+
+            .type-data{
+                span{
+                    cursor: pointer;
+                    &:hover{
+                        color: $color_red;
+                        transition: all .2s;
+                    }
+                }    
             }
         }
 
