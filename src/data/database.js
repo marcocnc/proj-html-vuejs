@@ -92,5 +92,29 @@ const squadPlayers = [
     },
 ]
 
-export {headerLinks, upcomingMatch, previousMatch, squadPlayers}
+const videoStreamsFirstRow = [
+    {
+        title: '2022 LVP SUPERLIGA ORANGE SUMMER'
+    },
+
+    {
+        title: 'PUBG CLASSIC TOURNAMENT'
+    },
+]
+
+const videoStreamsSecondRow =[
+    {
+        title: 'CAN I ADD MY LOCAL BANK ACCOUNT ?'
+    },
+
+    {
+        title: 'LEAGUE BATTLE TOURNAMENT'
+    },
+
+    {
+        title: 'WHERE CAN I REDEEM MY EARNINGS?'
+    },
+]
+
+export {headerLinks, upcomingMatch, previousMatch, squadPlayers ,videoStreamsFirstRow, videoStreamsSecondRow}
 

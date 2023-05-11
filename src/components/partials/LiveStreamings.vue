@@ -1,6 +1,18 @@
 <script>
+import {videoStreamsFirstRow, videoStreamsSecondRow} from '../../data/database';
 export default {
-    name: 'LiveStreamings'
+    name: 'LiveStreamings',
+    data(){
+        return{
+            videoStreamsFirstRow,
+            videoStreamsSecondRow
+        }
+    },
+    methods:{
+        getImage(img){
+            return new URL(img, import.meta.url).href;
+        }
+    }
 }
 </script>
 
@@ -15,26 +27,14 @@ export default {
                 <!-- Row with 2 cols -->
                 <div class="row">
                     
-                    <div class="col-6 p-2">
-                        <div class="video border">
+                    <div class="col-6 p-2" v-for="(video, index) in videoStreamsFirstRow" :key="index">
+                        <div class="video" :style="`background-image: url('../../../public/img/0${index + 1}.jpg')`">
                             <div class="play d-flex justify-content-end flex-column align-items-center h-50">
                                 <i class="fa-solid fa-circle-play"></i>
                             </div>
                             <div class="video-content text-start p-5">
                                 <button class="btn btn-primary">WATCH NOW <i class="fa-solid fa-circle-play"></i></button>
-                                <h4 class="pt-2">2022 LVP SUPERLIGA ORANGE SUMMER</h4>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-6 p-2">
-                        <div class="video border">
-                            <div class="play d-flex justify-content-end flex-column align-items-center h-50">
-                                <span>Play</span>
-                            </div>
-                            <div class="video-content text-start p-5">
-                                <button class="btn btn-primary">bottone</button>
-                                <h2 class="pt-2">TITOLO VIDEO</h2>
+                                <h4 class="video-title pt-2">{{ video.title }}</h4>
                             </div>
                         </div>
                     </div>
@@ -43,38 +43,14 @@ export default {
                 <!-- Row with 3 cols -->
                 <div class="row">
 
-                    <div class="col-4 p-2">
-                        <div class="video border">
+                    <div class="col-4 p-2" v-for="(video, index) in videoStreamsSecondRow" :key="index">
+                        <div class="video" :style="`background-image: url('../../../public/img/0${2 + index + 1}.jpg')`">
                             <div class="play d-flex justify-content-end flex-column align-items-center h-50">
-                                <span>Play</span>
+                                <i class="fa-solid fa-circle-play"></i>
                             </div>
                             <div class="video-content text-start p-5">
-                                <button class="btn btn-primary">WATCH NOW </button>
-                                <h2 class="pt-2">TITOLO VIDEO</h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-4 p-2">
-                        <div class="video border">
-                            <div class="play d-flex justify-content-end flex-column align-items-center h-50">
-                                <span>Play</span>
-                            </div>
-                            <div class="video-content text-start p-5">
-                                <button class="btn">bottone</button>
-                                <h2 class="pt-2">TITOLO VIDEO</h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-4 p-2">
-                        <div class="video border">
-                            <div class="play d-flex justify-content-end flex-column align-items-center h-50">
-                                <span>Play</span>
-                            </div>
-                            <div class="video-content text-start p-5">
-                                <button class="btn btn-primary">bottone</button>
-                                <h2 class="pt-2">TITOLO VIDEO</h2>
+                                <button class="btn btn-primary">WATCH NOW <i class="fa-solid fa-circle-play"></i></button>
+                                <h4 class="video-title pt-2">{{ video.title }}</h4>
                             </div>
                         </div>
                     </div>
@@ -86,10 +62,10 @@ export default {
 <style lang="scss">
 @use '../../scss/partials/vars' as *;
     .live-streamings{
-        background-image: url('../../../public/img/bg\ \(3\).jpg');
         background-size: cover;
         background-attachment: fixed;
         padding-bottom: 120px;
+        background-image: url('../../../public/img/bg\ \(3\).jpg');
 
         .col-6,
         .col-4{
@@ -98,6 +74,8 @@ export default {
 
         .video{
             height: 100%;
+            background-position: center;
+            border: 10px solid $color_darkblue;
             .play{
                 .fa-circle-play{
                     border-radius: 50%;
@@ -117,6 +95,11 @@ export default {
                 font-weight: 700;
             }
             
+            .video-title{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
     }
 </style>
