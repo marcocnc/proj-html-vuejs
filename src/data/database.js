@@ -116,5 +116,25 @@ const videoStreamsSecondRow =[
     },
 ]
 
-export {headerLinks, upcomingMatch, previousMatch, squadPlayers ,videoStreamsFirstRow, videoStreamsSecondRow}
+const products = [
+    {
+        img: '01',
+        color: 'BLACK'
+    },
+
+    {
+        img: '02',
+        color: 'GREEN'
+    },
+    {
+        img: '03',
+        color: 'YELLOW'
+    },
+    {
+        img: '04',
+        color: 'BLUE'
+    },
+]
+
+export {headerLinks, upcomingMatch, previousMatch, squadPlayers ,videoStreamsFirstRow, videoStreamsSecondRow, products}
 
