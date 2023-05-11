@@ -65,5 +65,32 @@ const previousMatch = [
     },
 ]
 
-export {headerLinks, upcomingMatch, previousMatch}
+const squadPlayers = [
+    {
+        img: '1',
+        team: 'DRAGON TEAM'
+    },
+
+    {
+        img: '2',
+        team: 'FROGS TEAM'
+    },
+    
+    {
+        img: '3',
+        team: 'TIGERS TEAM'
+    },
+
+    {
+        img: '4',
+        team: 'SHARK TEAM'
+    },
+
+    {
+        img: '5',
+        team: 'GAMING TEAM'
+    },
+]
+
+export {headerLinks, upcomingMatch, previousMatch, squadPlayers}
 

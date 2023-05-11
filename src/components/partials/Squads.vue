@@ -1,32 +1,46 @@
 <script>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay, Navigation } from 'swiper';
+import {squadPlayers} from '../../data/database';
+
 export default {
     name: 'Squads',
     components: {
       Swiper,
       SwiperSlide,
     },
+    data(){
+        return{
+            squadPlayers
+        }
+    },
+    methods:{
+        getImage(img){
+            return new URL(img, import.meta.url).href;
+        }
+    },
+
     setup() {
       return {
         modules: [Autoplay, Navigation]
       }
     }
+    
 }
 </script>
 
 <template>
     <section class="squads">
         <div class="titles text-center pt-5">
-            <h5>titolo</h5>
-            <h3 class="pb-3">Titolo</h3>
+            <h5>OUR TEAM PLAYERS</h5>
+            <h2 class="pb-3">MEET OUR SQUAD PLAYERS</h2>
         </div> 
 
         <!-- Swiper -->
         <swiper
             :slidesPerView="5"
-            :spaceBetween="20"
-            :centeredSlides="true"
+            :spaceBetween="30"
+            :centeredSlides="false"
             :autoplay="{
             delay: 2500,
             disableOnInteraction: false,
@@ -39,12 +53,65 @@ export default {
             :loop="true"
             class="mySwiper"
         >
-            <swiper-slide>Slide 1</swiper-slide>
-            <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
-            <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
-            <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
-            <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
-            <swiper-slide>Slide 10</swiper-slide>
+            
+            <!-- First group of slides -->
+            <swiper-slide class="d-flex flex-column" v-for="(squad, index) in squadPlayers"
+             :key="index" 
+             :style="`background-image: url('../../../public/img/${index + 1}.jpg')`">
+
+                <div class="image">
+                    <img :src="getImage(`../../../public/img/${squad.img}.png`)">
+                </div>
+
+                <div class="name-squad pt-3">
+                    <h3>{{ squad.team }}</h3>
+                </div>
+
+                <div class="social d-flex">
+                    <a href="#" class="pe-2">
+                        <img src="../../../public/img/social-1.png" alt="social-1">
+                    </a>
+
+                    <a href="#" class="pe-2">
+                        <img src="../../../public/img/social-2.png" alt="social-2">
+                    </a>
+
+                    <a href="#">
+                        <img src="../../../public/img/social-3.png" alt="social-3">
+                    </a>
+                </div>
+                    
+            </swiper-slide>
+
+            <!-- Second group of slides -->
+            <swiper-slide class="d-flex flex-column"
+             v-for="(squad, index) in squadPlayers"
+              :key="index"
+              :style="`background-image: url('../../../public/img/${index + 1}.jpg')`">
+
+                <div class="image">
+                    <img :src="getImage(`../../../public/img/${squad.img}.png`)">
+                </div>
+
+                <div class="name-squad pt-3">
+                    <h3>{{ squad.team }}</h3>
+                </div>
+
+                <div class="social d-flex">
+                    <a href="#" class="pe-2">
+                        <img src="../../../public/img/social-1.png" alt="social-1">
+                    </a>
+
+                    <a href="#" class="pe-2">
+                        <img src="../../../public/img/social-2.png" alt="social-2">
+                    </a>
+
+                    <a href="#">
+                        <img src="../../../public/img/social-3.png" alt="social-3">
+                    </a>
+                </div>
+                    
+            </swiper-slide>
         </swiper>
         <!-- End Swiper -->
 
@@ -87,6 +154,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        border: 10px solid $color_darkblue;
     }
 
     .swiper-slide img {
@@ -101,6 +169,15 @@ export default {
         background-image: url('../../../public/img/bg\ \(4\).jpg');
         background-size: cover;
         background-position: center;
+    }
+
+    .social{
+        a{
+            img{
+                height: 50px;
+                width: 50px;
+            }
+        }
     }
 }
 
