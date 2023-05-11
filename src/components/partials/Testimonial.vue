@@ -18,11 +18,11 @@ export default {
 <template>
     <section class="testimonial">
         <div class="titles text-center pt-5">
-            <h5>titolo</h5>
-            <h3 class="pb-3">Titolo</h3>
+            <h5>OUR RECENT NEWS</h5>
+            <h2 class="pb-3">OUR MOST POPULAR TESTIMONIAL POSTS</h2>
         </div> 
 
-        <div class="mc-container text-black">
+        <div class="mc-container">
             <swiper
                 :slidesPerView="2"
                 :spaceBetween="10"
@@ -39,8 +39,154 @@ export default {
                 :loop="true"
                 class="mySwiper"
             >
-                <swiper-slide>Slide 1</swiper-slide><swiper-slide>Slide 2</swiper-slide>
-                <swiper-slide>Slide 3</swiper-slide><swiper-slide>Slide 4</swiper-slide>
+
+                <!-- MADLEY PONDOR 1 -->
+                <swiper-slide class="p-4">
+                    <div class="slider-top d-flex justify-content-between w-100 align-items-center">
+                        <div class="top-content d-flex">
+
+                            <!-- IMAGE -->
+                            <div class="top-image pe-2">
+                                <img class="rounded-circle" src="../../../public/img/01 (2).jpg">
+                            </div>
+                            <div class="user text-start">
+                                <h6 class="fs-5">MADLEY PONDOR</h6>
+                                <span class="pt-2 text-start">UI Designer</span>
+                            </div>
+                        </div>
+
+                        <!-- PARTNER IMAGE -->
+                        <div class="user-partner">
+                            <img src="../../../public/img/01 (3).png">
+                        </div>
+                    </div>
+
+                    <div class="line w-100 mt-4"></div>
+
+                    <!-- REVIEW -->
+                    <div class="review text-start pt-3">
+                        <p class="fs-6">Edgeing nterfaces fnergstca plagiarize teams anbudng paradgms rapidiousl buildcaboration anden deassharing viaing and bleeding whereas goingi forward process and monetze</p>
+                        <div class="rate d-flex pt-1 align-items-center">
+                            <div class="stars me-2">
+                                <i class="fa-regular fa-star mx-1" v-for="star in 5" :key="star" style="background-color: #00B67A;"></i>
+                            </div>
+                            <div class="number">
+                                <span class="green-span">5.28</span>
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+
+
+                <!-- OLIVER BEDDOWS 1 -->
+                <swiper-slide class="p-4">
+                    <div class="slider-top d-flex justify-content-between w-100 align-items-center">
+                        <div class="top-content d-flex">
+                            <!-- IMAGE -->
+                            <div class="top-image pe-2">
+                                <img class="rounded-circle" src="../../../public/img/02 (3).jpg">
+                            </div>
+                            <div class="user text-start">
+                                <h6 class="fs-5">OLIVER BEDDOWS</h6>
+                                <span class="pt-2 text-start">UI Designer</span>
+                            </div>
+                        </div>
+                        <!-- PARTNER IMAGE -->
+                        <div class="user-partner">
+                            <img src="../../../public/img/01 (3).png">
+                        </div>
+                    </div>
+
+                    <div class="line w-100 mt-4"></div>
+
+                    <!-- REVIEW -->
+                    <div class="review text-start pt-3">
+                        <p class="fs-6">Rapidious buildcaboration anden deas sharing viaing and beedng edgeing nterfaces fnergstcia plagiarize teams anbuding paradgm whereas goingi forward process and monetze</p>
+                        <div class="rate d-flex pt-1 align-items-center">
+                            <div class="stars me-2">
+                                <i class="fa-regular fa-star mx-1 rounded-circle" v-for="star in 5" :key="star" style="background-color: #F06A22;"></i>
+                            </div>
+                            <div class="number">
+                                <span class="orange-span">5.28</span>
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+
+
+                <!-- MADLEY PONDOR 2 -->
+                <swiper-slide class="p-4">
+                    <div class="slider-top d-flex justify-content-between w-100 align-items-center">
+                        <div class="top-content d-flex">
+
+                            <!-- IMAGE -->
+                            <div class="top-image pe-2">
+                                <img class="rounded-circle" src="../../../public/img/01 (2).jpg">
+                            </div>
+                            <div class="user text-start">
+                                <h6 class="fs-5">MADLEY PONDOR</h6>
+                                <span class="pt-2 text-start">UI Designer</span>
+                            </div>
+                        </div>
+
+                        <!-- PARTNER IMAGE -->
+                        <div class="user-partner">
+                            <img src="../../../public/img/01 (3).png">
+                        </div>
+                    </div>
+
+                    <div class="line w-100 mt-4"></div>
+
+                    <!-- REVIEW -->
+                    <div class="review text-start pt-3">
+                        <p class="fs-6">Edgeing nterfaces fnergstca plagiarize teams anbudng paradgms rapidiousl buildcaboration anden deassharing viaing and bleeding whereas goingi forward process and monetze</p>
+                        <div class="rate d-flex pt-1 align-items-center">
+                            <div class="stars me-2">
+                                <i class="fa-regular fa-star mx-1" v-for="star in 5" :key="star" style="background-color: #00B67A;"></i>
+                            </div>
+                            <div class="number">
+                                <span class="green-span">5.28</span>
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+
+
+
+                <!-- OLIVER BEDDOWS 2 -->
+                <swiper-slide class="p-4">
+                    <div class="slider-top d-flex justify-content-between w-100 align-items-center">
+                        <div class="top-content d-flex">
+                            <!-- IMAGE -->
+                            <div class="top-image pe-2">
+                                <img class="rounded-circle" src="../../../public/img/02 (3).jpg">
+                            </div>
+                            <div class="user text-start">
+                                <h6 class="fs-5">OLIVER BEDDOWS</h6>
+                                <span class="pt-2 text-start">UI Designer</span>
+                            </div>
+                        </div>
+                        <!-- PARTNER IMAGE -->
+                        <div class="user-partner">
+                            <img src="../../../public/img/01 (3).png">
+                        </div>
+                    </div>
+
+                    <div class="line w-100 mt-4"></div>
+
+                    <!-- REVIEW -->
+                    <div class="review text-start pt-3">
+                        <p class="fs-6">Rapidious buildcaboration anden deas sharing viaing and beedng edgeing nterfaces fnergstcia plagiarize teams anbuding paradgm whereas goingi forward process and monetze</p>
+                        <div class="rate d-flex pt-1 align-items-center">
+                            <div class="stars me-2">
+                                <i class="fa-regular fa-star mx-1 rounded-circle" v-for="star in 5" :key="star" style="background-color: #F06A22;"></i>
+                            </div>
+                            <div class="number">
+                                <span class="orange-span">5.28</span>
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
             </swiper>
         </div>
     </section>
@@ -68,9 +214,7 @@ export default {
         text-align: center;
         font-size: 18px;
         background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        background-color: $color_darkblue;
     }
 
     .swiper-slide img {
@@ -80,5 +224,23 @@ export default {
         object-fit: cover;
     }
     // End Swiper Classes
+    }
+
+    .line{
+        border-bottom: 1px solid #373E6C;
+    }
+
+    .stars i{
+        padding: 8px;
+    }
+
+    .number .green-span{
+        font-weight: 700;
+        color: #00B67A;
+    }
+
+    .orange-span{
+        color: #F06A22;
+        font-weight: 700;
     }
 </style>

@@ -217,7 +217,7 @@ export default {
                 </div>
             </div>
 
-            <div class="mc-buttons my-5">BROWSE ALL MATCHES <i class="fa-solid fa-chevron-right fs-6"></i></div>
+            <div class="mc-buttons my-5">BROWSE ALL MATCHES <i class="fa-solid fa-circle-chevron-right"></i></div>
         </div>
     </section>
 </template>

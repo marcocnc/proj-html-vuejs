@@ -121,7 +121,7 @@ export default {
                     <h5>LET'S PLAY TOGETHER</h5>
                     <h3>JOIN GAMER ESPORTS TO BECOME NEXT PRO GAMER TODAY!</h3>
                     <p class="py-4">Distinctively provide acces mutfuncto users whereas transparent proceses somes ncentivize eficient functionalities rather than an extensible archtectur services and cross</p>
-                    <button class="mc-buttons">JOIN COMMUNITY <i class="fa-solid fa-chevron-right fs-6"></i></button>
+                    <button class="mc-buttons">JOIN COMMUNITY <i class="fa-solid fa-circle-chevron-right"></i></button>
                 </div>
                 <div class="community-image w-50">
                     <img src="../../../public/img/01 (1).png" alt="01">

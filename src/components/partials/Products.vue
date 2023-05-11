@@ -75,7 +75,7 @@ export default {
                         </div>
                     </div>
                 </div>
-                <button class="mc-buttons my-5">BECOME A PARTNER <i class="fa-solid fa-chevron-right fs-6" style="background-color: #FF0052;;"></i></button>
+                <button class="mc-buttons my-5">BECOME A PARTNER <i class="fa-solid fa-circle-chevron-right"></i></button>
             </div>
         </div>
     </section>                
