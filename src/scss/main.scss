@@ -125,3 +125,11 @@ p,span{
 #app{
     position: relative;
 }
+
+.animated{
+    cursor: pointer;
+    &:hover{
+        transform: rotateY(360deg);
+        transition: all 1s;
+    }
+}

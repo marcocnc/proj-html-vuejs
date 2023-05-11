@@ -89,6 +89,12 @@ export default {
 
         .product{
             background-color: $color_darkblue;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $color_red;
+                transition: all .5s;
+            }
         }
         .line{
             border-bottom: 1px solid white;

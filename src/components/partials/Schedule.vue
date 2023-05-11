@@ -55,13 +55,13 @@ export default {
                         <!-- Teams images -->
                         <div class="col-4 d-flex justify-content-between align-items-center">
                             <a href="#">
-                                <img src="../../../public/img/teamsm-6.png" alt="teamsm-6">
+                                <img class="animated" src="../../../public/img/teamsm-6.png" alt="teamsm-6">
                             </a>
                             <a href="#">
                                 <img class="vs-image" src="../../../public/img/vs.png" alt="vs">
                             </a>
                             <a href="#">
-                                <img src="../../../public/img/teamsm-9.png" alt="teamsm-9">
+                                <img class="animated" src="../../../public/img/teamsm-9.png" alt="teamsm-9">
                             </a>
                        </div>
 
@@ -117,7 +117,7 @@ export default {
                                 <!-- FIRST TEAM IMAGE -->
                                 <div class="col-4 w-25 d-flex align-items-center justify-content-center">
                                     <a href="#">
-                                        <img :src="getImage(`../../../public/img/${match.firstTeam}.png`)">
+                                        <img class="animated" :src="getImage(`../../../public/img/${match.firstTeam}.png`)">
                                     </a>
                                 </div>
 
@@ -146,7 +146,7 @@ export default {
                                 <!-- SECOND TEAM IMAGE -->
                                 <div class="col-4 d-flex align-items-center justify-content-center w-25">
                                     <a href="#">
-                                        <img :src="getImage(`../../../public/img/${match.secondTeam}.png`)">
+                                        <img class="animated" :src="getImage(`../../../public/img/${match.secondTeam}.png`)">
                                     </a>
                                 </div>
                             </div>
@@ -179,7 +179,7 @@ export default {
                                 <!-- FIRST TEAM IMAGE -->
                                 <div class="col-4 w-25 d-flex align-items-center justify-content-center">
                                     <a href="#">
-                                        <img class="match-team-image" :src="getImage(`../../../public/img/${match.firstTeam}.png`)">
+                                        <img class="match-team-image animated" :src="getImage(`../../../public/img/${match.firstTeam}.png`)">
                                     </a>
                                 </div>
 
@@ -192,15 +192,15 @@ export default {
                                     </div>
                                     <div class="social d-flex justify-content-center pe-2 pt-3">
                                         <a href="#" class="pe-2">
-                                            <img src="../../../public/img/social-1.png" alt="social-1">
+                                            <img class="animated" src="../../../public/img/social-1.png" alt="social-1">
                                         </a>
 
                                         <a href="#" class="pe-2">
-                                            <img src="../../../public/img/social-2.png" alt="social-2">
+                                            <img class="animated" src="../../../public/img/social-2.png" alt="social-2">
                                         </a>
 
                                         <a href="#">
-                                            <img src="../../../public/img/social-3.png" alt="social-3">
+                                            <img class="animated" src="../../../public/img/social-3.png" alt="social-3">
                                         </a>
                                     </div>
                                 </div>
@@ -208,7 +208,7 @@ export default {
                                 <!-- SECOND TEAM IMAGE -->
                                 <div class="col-4 d-flex align-items-center justify-content-center w-25">
                                     <a href="#">
-                                        <img class="match-team-image" :src="getImage(`../../../public/img/${match.secondTeam}.png`)">
+                                        <img class="match-team-image animated" :src="getImage(`../../../public/img/${match.secondTeam}.png`)">
                                     </a>
                                 </div>
                             </div>
@@ -250,9 +250,6 @@ export default {
             .match-data{
                 color: #555;
                 width: 55%;
-                .day{
-                    border-right: 2px solid #555;
-                }
             }
         }
 

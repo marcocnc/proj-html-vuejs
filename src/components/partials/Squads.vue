@@ -60,7 +60,7 @@ export default {
              :style="`background-image: url('../../../public/img/${index + 1}.jpg')`">
 
                 <div class="image">
-                    <img :src="getImage(`../../../public/img/${squad.img}.png`)">
+                    <img class="animated" :src="getImage(`../../../public/img/${squad.img}.png`)">
                 </div>
 
                 <div class="name-squad pt-3">
@@ -90,7 +90,7 @@ export default {
               :style="`background-image: url('../../../public/img/${index + 1}.jpg')`">
 
                 <div class="image">
-                    <img :src="getImage(`../../../public/img/${squad.img}.png`)">
+                    <img class="animated" :src="getImage(`../../../public/img/${squad.img}.png`)">
                 </div>
 
                 <div class="name-squad pt-3">

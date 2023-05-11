@@ -17,21 +17,21 @@ export default {
                 <!-- Cards -->
                 <div class="mc-cards-container w-100 d-flex mt-4">
                     <div class="mc-card d-flex justify-content-center align-items-center">
-                        <img class="team-image" src="../../../public/img/team-1.png" alt="team-1">
+                        <img class="team-image animated" src="../../../public/img/team-1.png" alt="team-1">
                         <img class="vs-image mx-3" src="../../../public/img/vs.png" alt="vs">
-                        <img class="team-image" src="../../../public/img/team-2.png" alt="team-2">
+                        <img class="team-image animated" src="../../../public/img/team-2.png" alt="team-2">
                     </div>
 
                     <div class="mc-card d-flex justify-content-center align-items-center">
-                        <img class="team-image" src="../../../public/img/teamsm-4.png" alt="team-1">
+                        <img class="team-image animated" src="../../../public/img/teamsm-4.png" alt="team-1">
                         <img class="vs-image mx-3" src="../../../public/img/vs.png" alt="vs">
-                        <img class="team-image" src="../../../public/img/teamsm-3.png" alt="team-2">
+                        <img class="team-image animated" src="../../../public/img/teamsm-3.png" alt="team-2">
                     </div>
 
                     <div class="mc-card d-flex justify-content-center align-items-center">
-                        <img class="team-image" src="../../../public/img/teamsm-2.png" alt="team-1">
+                        <img class="team-image animated" src="../../../public/img/teamsm-2.png" alt="team-1">
                         <img class="vs-image mx-3" src="../../../public/img/vs.png" alt="vs">
-                        <img class="team-image" src="../../../public/img/teamsm-1.png" alt="team-2">
+                        <img class="team-image animated" src="../../../public/img/teamsm-1.png" alt="team-2">
                     </div>
                 </div>
 
