@@ -116,27 +116,7 @@ export default {
             margin: 100px 0;
         }
 
-        .mc-buttons {
-            box-shadow: 4px 4px $color_red;
-            i{
-                color: $color_white;
-                background-color: $color_red;
-                border-radius: 50%;
-                padding: 1px 2px;
-            }
-
-            &:hover{
-              background-color: $color_red;
-              box-shadow: -4px -4px $color_white;
-              transition: all .3s;
-              color: $color_white;
-            }
-
-            &:hover i{
-                color: $color_red;
-                background-color: $color_white;
-            }
-        }
+        
         .bottom{
             .who-image{
                 img{

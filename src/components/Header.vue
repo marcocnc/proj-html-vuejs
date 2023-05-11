@@ -94,7 +94,7 @@ export default {
 
     header{
         background: $header_bgc;
-        
+        font-family: 'Barlow', sans-serif;
     
         .phone-number,
         .header-icons{

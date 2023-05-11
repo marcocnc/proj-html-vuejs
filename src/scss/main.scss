@@ -12,7 +12,7 @@
 }
 
 body{
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Oswald', sans-serif;
     height: 100vh;
 }
 
@@ -21,7 +21,7 @@ body{
 }
 
 .mc-container{
-    width: 80%;
+    width: 75%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -56,13 +56,63 @@ h5{
     height: 40px;
 }
 
-.mc-buttons{
+.mc-buttons,
+.mc-buttons-reverse{
     padding: 15px 25px;
     border: none;
     border-radius: 6px;
     font-size: 20px;
     font-weight: bold;
+     cursor: pointer;
+}
+
+.mc-buttons{
     background-color: $color_white;
     color: $color_red;
-    cursor: pointer;
+    box-shadow: 4px 4px #D0D4D8;
+
+    &:hover{
+        background-color: $color_red;
+        color: $color_white;
+        box-shadow: -4px -4px $color_white;
+        transition: all .3s;
+    }
+}
+
+.mc-buttons-reverse{
+    background-color: $color_red;
+    color: $color_white;
+    box-shadow: 4px 4px #555;
+
+    &:hover{
+        background-color: $color_white;
+        color: $color_red;
+        box-shadow: -4px -4px $color_red, 3px 3px 3px #555;
+        transition: all .3s;
+    }
+}
+
+.mc-buttons {
+    i{
+        color: $color_white;
+        background-color: $color_red;
+        border-radius: 50%;
+        padding: 1px 2px;
+    }
+
+    &:hover{
+      background-color: $color_red;
+      box-shadow: -4px -4px $color_white;
+      transition: all .3s;
+      color: $color_white;
+    }
+
+    &:hover i{
+        color: $color_red;
+        background-color: $color_white;
+    }
+}
+
+p,span{
+    font-family: 'Barlow', sans-serif;
 }
