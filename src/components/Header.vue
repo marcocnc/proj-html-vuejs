@@ -96,7 +96,7 @@ export default {
         background: $header_bgc;
         font-family: 'Barlow', sans-serif;
         position: fixed;
-        z-index: 9999;
+        z-index: 99;
         width: 100%;
     
         .phone-number,
